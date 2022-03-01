@@ -137,3 +137,25 @@ p.time-21 {
     margin-right: 53px;
     margin-bottom: 30px;
 }
+
+section.reserve-button {
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 350px;
+}
+
+.register {
+    text-align: center;
+}
+
+.form-group {
+    margin-right: 20px;
+}
+
+.form-check {
+    margin: auto 20px auto 0;
+}
+
+button.btn.btn-primary {
+    width: 100px;
+}

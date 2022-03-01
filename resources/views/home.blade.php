@@ -275,7 +275,40 @@
         </section>
         <section class="reserve-button">
             <div class="register">
-                
+                <form class="d-flex" action="{{ route('register') }}" method="post">
+                    @csrf
+                    <div class="form-group">
+                        <input class="form-control" type="text"　id="name" name="name" placeholder="名前">
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" name="menu" id="">
+                            <option value="0">メニュー</option>
+                            <option value="1">カット</option>
+                            <option value="2">カットカラー</option>
+                            <option value="3">カットパーマ</option>
+                            <option value="4">レディースSV</option>
+                        </select>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="" id="check-1" checked>
+                        <label for="check-1">顔剃り</label>
+                        <input type="checkbox" name="" id="check-2">
+                        <label for="check-2">ヘッドスパ</label>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" name="time" id="">
+                            <option value="0">所要時間</option>
+                            <option value="1">30分</option>
+                            <option value="2">1時間</option>
+                            <option value="3">1時間15分</option>
+                            <option value="4">1時間半</option>
+                            <option value="5">1時間45分</option>
+                            <option value="6">2時間</option>
+                            <option value="7">2時間半</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-primary">登録</button>
+                </form>
             </div>
         </section>
     </main>

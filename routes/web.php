@@ -18,3 +18,4 @@ Route::get('/', function () {
 });
 
 Route::get('/home', [App\Http\Controllers\ReserveController::class, 'home']);
+Route::post('/home/regiser', [\App\Http\Controllers\ReserveController::class, 'register'])->name('register');
